@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Névsorsoló</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Karácsonyi virtuális "Név a kalapból"</h1>
+    <p>Ki vagy? Válaszd ki magad a listából, hogy elkezdhess sorsolni!</p>
+    <label for="userSelect">Én vagyok:</label>
+    <select id="userSelect">
+        <option value="" disabled selected>Válassz...</option>
+    </select>
+    <button id="startButton">Start</button>
+    <div id="sorsolasSection" style="display: none;">
+        <p>Kattints a gombra, hogy kihúzz egy nevet!</p>
+        <button id="drawButton">Húzás</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
